@@ -8,6 +8,8 @@
 <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"  media="screen,projection"/>
 <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
 
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -28,88 +30,29 @@
   <div class="container">
     <div class="row">
 
+      <div class="col s12 m12 l12">
 
+        <ul id="filterOptions">
+          <li id="first" class="active btn btn-large waves-effect waves-light"><a href="#" class="category-hoodie">Sweatshirt foret</a></li>
+          <li class="btn btn-large waves-effect waves-light"><a href="#" class="category-polo">Sweatshirt standard</a></li>
+          <li class="btn btn-large waves-effect waves-light"><a href="#" class="category-polo">Hætte cardigan</a></li>
+          <li class="btn btn-large waves-effect waves-light"><a href="#" class="category-polo">Skjort kortærmet (strygefri)</a></li>
+          <li class="btn btn-large waves-effect waves-light"><a href="#" class="category-polo">Skjort langærmet (strygefri)</a></li>
+          <li class="btn btn-large waves-effect waves-light"><a href="#" class="category-polo">Polo kortærmet</a></li>
+          <li class="btn btn-large waves-effect waves-light"><a href="#" class="category-polo">Polo langærmet</a></li>
+        </ul>
 
-
-  <div class="row">
-    <div class="col s12 m12 l12">
-
-      <ul id="filterOptions">
-        <li id="first" class="active btn btn-large waves-effect waves-light"><a href="#" class="category-hoodie">Sweatshirt foret</a></li>
-        <li class="btn btn-large waves-effect waves-light"><a href="#" class="category-polo">Sweatshirt standard</a></li>
-        <li class="btn btn-large waves-effect waves-light"><a href="#" class="category-polo">Hætte cardigan</a></li>
-        <li class="btn btn-large waves-effect waves-light"><a href="#" class="category-polo">Skjort kortærmet (strygefri)</a></li>
-        <li class="btn btn-large waves-effect waves-light"><a href="#" class="category-polo">Skjort langærmet (strygefri)</a></li>
-        <li class="btn btn-large waves-effect waves-light"><a href="#" class="category-polo">Polo kortærmet</a></li>
-        <li class="btn btn-large waves-effect waves-light"><a href="#" class="category-polo">Polo langærmet</a></li>
-      </ul>
-
-    </div>
-    <div class="col s12 m12 l12">
-
-      <div id="ourHolder">
-        <div class="item category-hoodie">
-
-          <div class="row">
-            <div class="carousel">
-              <a class="carousel-item" href="#one!"><img src="produkter/sweatshirt-foret/01.png"></a>
-              <a class="carousel-item" href="#two!"><img src="produkter/sweatshirt-foret/02.png"></a>
-              <a class="carousel-item" href="#three!"><img src="produkter/sweatshirt-foret/03.png"></a>
-              <a class="carousel-item" href="#four!"><img src="produkter/sweatshirt-foret/04.png"></a>
-              <a class="carousel-item" href="#five!"><img src="produkter/sweatshirt-foret/05.png"></a>
-            </div>
-          </div>
-          <div class="row">
-            <h2>Foret sweatshirt</h2>
-          </div>
-          <div class="row">
-
-            <div class="col s12">
-
-              <table class="responsive-table">
-                <thead>
-                  <tr>
-                      <th>Bestilling</th>
-                      <th>Stk.</th>
-                      <th class="right-align">Pris</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-                    <td>Sweatshirt inkl. logo</td>
-                    <td>10 stk.</td>
-                    <td class="right-align">600 kr.</td>
-                  </tr>
-                  <tr>
-                    <td>Sweatshirt inkl. logo</td>
-                    <td>20 stk.</td>
-                    <td class="right-align">700 kr.</td>
-                  </tr>
-                  <tr>
-                    <td>Sweatshirt inkl. logo</td>
-                    <td>50 stk.</td>
-                    <td class="right-align">1500 kr.</td>
-                  </tr>
-                </tbody>
-              </table>
-
-            </div>
-            <div class="col s12">
-<h6>
-Alle bestillinger er inklusiv ét enkelt farvet logo på bryst. Kontakt for et tilbud med flerfarvet tryk, logo på ryg eller logo på ærme.
-</h6>
-            </div>
-
-          </div>
-
-        </div>
-        <div class="item notfirst category-polo">
-
-          <h1>Polo</h1>
-
-        </div>
       </div>
+      <div class="col s12 m12 l12">
+
+        <div id="ourHolder">
+          <div class="item category-hoodie">
+            <!--#include virtual="/polo-standard.html" -->
+          </div>
+          <div class="item notfirst category-polo">
+
+          </div>
+        </div>
 
     </div>
   </div>
@@ -131,6 +74,7 @@ asdfasdfasdf
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
+
 
   $('.carousel').carousel();
 
@@ -162,6 +106,7 @@ $(document).ready(function(){
   });
 
 });
+
 </script>
 </body>
 </html>
