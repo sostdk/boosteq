@@ -16,15 +16,23 @@
 </head>
 
 <body>
-<header class="valign-wrapper">
+<header>
+
+  <video class="responsive-video" autoplay muted>
+    <source src="materials/HeaderVid.mp4" type="video/mp4">
+  </video>
+
+<div class="valign-wrapper">
   <div class="container">
     <div class="row">
-      <h1 class="center-align">BOOSTEQ</h1>
+      <h1>BOOSTEQ</h1>
     </div>
     <div class="row">
-      <h2 class="center-align">DIN - VALUE PROPOSITION - HER</h2>
+      <h2>DIN - VALUE PROPOSITION - HER</h2>
     </div>
   </div>
+</div>
+
 </header>
 <main class="z-depth-5">
   <div class="container">
@@ -743,26 +751,52 @@
         </div>
 
 
-
-
-
-
-
         </div>
     </div>
   </div>
 </main>
-<footer class="valign-wrapper">
-  <div class="container">
-    <div class="row">
-asdfsadfasdf
-    </div>
 
-    <div class="row">
-asdfasdfasdf
+<footer>
+  <div class="parraHeading valign-wrapper">
+    <div class="container">
+      <div class="row">
+        <h4 class="center-align">
+          Kontakt os <a onclick="$('.tap-target').tapTarget('open')">her</a>, for bestilling eller yderligere informationer
+        </h4>
+      </div>
     </div>
   </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="materials/GrungeFooterBg.jpg"></div>
+  </div>
+
+  <section class="grey darken-4 valign-wrapper">
+    <div class="container">
+        <div class="row">
+<br><br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <address class="grey lighten-2">
+    <div class="container">
+      <div class="row">
+        <p class="grey-text text-darken-4 center-align">Boosteq IVS | Cvr.: 39099314 | Enggårdvej 21, 7400 Herning | Tlf. 20932197 | mail@boosteq.dk</p>
+      </div>
+    </div>
+  </address>
 </footer>
+
+<a id="messenger" href="http://m.me/boosteq" target="_blank" class="waves-effect waves-light btn btn-floating messenger transparent" ><img src="materials/messenger.svg"></a>
+<!-- Tap Target Structure -->
+<div class="tap-target" data-activates="messenger">
+  <div class="tap-target-content">
+    <h5>Kontakt os her for bestilling</h5>
+    <p>Husk at sende logo med i beskeden</p>
+  </div>
+</div>
+
 
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -770,6 +804,7 @@ asdfasdfasdf
 <script type="text/javascript">
 $(document).ready(function(){
 
+  $('.parallax').parallax();
 
   $('.carousel').carousel();
 
@@ -777,6 +812,14 @@ $(document).ready(function(){
   {
     $('.notfirst').hide();
   }
+
+  var options = [
+    {selector: 'footer', offset: 200, callback: function() {
+      $('.tap-target').tapTarget('open');
+    } }
+  ];
+  Materialize.scrollFire(options);
+
 
   $('#filterOptions li a').click(function() {
     // fetch the class of the clicked item
@@ -803,5 +846,6 @@ $(document).ready(function(){
 });
 
 </script>
+
 </body>
 </html>
