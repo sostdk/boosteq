@@ -136,6 +136,7 @@ footer {
 
 .messenger {
   position:fixed;
+  z-index:99999999;
   bottom:5vh;
   right:5vw;
   box-shadow: none;
